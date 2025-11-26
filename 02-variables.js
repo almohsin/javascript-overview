@@ -15,11 +15,11 @@ console.log(b);
 const c = 3;
 console.log(c);
 
-// 4. Use no keyword
-// Not recommended as the variable will be GLOBAL. Instead, use one of the above // methods.
+// // 4. Use no keyword
+// // Not recommended as the variable will be GLOBAL. Instead, use one of the above // methods.
 
-d = 4;
-console.log(d);
+// d = 4;
+// console.log(d);
 
 // What is the difference between var and let?
 // var and let differ in scope.
