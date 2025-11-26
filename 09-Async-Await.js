@@ -10,8 +10,14 @@ import fetch from 'node-fetch';
 
 async function getUser() {
   try {
-    const response = await fetch('https://reqres.in/api/users/2');
+    const response = await fetch('https://reqres.in/api/users/2', {
+      headers: {
+        'x-api-key': 'reqres-free-v1',
+      },
+    });
+    //console.log(response);
     const json_obj = await response.json();
+    //console.log(json_obj);
     console.log(json_obj.data.id);
   } catch (error) {
     console.error(error);
