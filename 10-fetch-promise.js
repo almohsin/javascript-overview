@@ -13,6 +13,7 @@ const data = {
 
 const customHeaders = {
   'Content-Type': 'application/json',
+  'x-api-key': 'reqres-free-v1'
 };
 
 fetch('https://jsonplaceholder.typicode.com/users', {
