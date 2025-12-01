@@ -1,10 +1,10 @@
 import fetch from 'node-fetch';
 
 // Get
-fetch('https://reqres.in/api/users/2')
+fetch('https://jsonplaceholder.typicode.com/users/2')
   .then((res) => res.json())
-  .then((json_obj) => console.log(json_obj.data.first_name))
-  .catch((err) => console.error(error));
+  .then((json_obj) => console.log(json_obj.name))
+  .catch((err) => console.error(err));
 
 // Post
 const data = {
@@ -13,7 +13,7 @@ const data = {
 
 const customHeaders = {
   'Content-Type': 'application/json',
-  'x-api-key': 'reqres-free-v1'
+  'x-api-key': 'reqres-free-v1',
 };
 
 fetch('https://jsonplaceholder.typicode.com/users', {
@@ -23,4 +23,4 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 })
   .then((res) => res.json())
   .then((json_obj) => console.log(json_obj))
-  .catch((err) => console.error(error));
+  .catch((err) => console.error(err));
